@@ -1,11 +1,10 @@
 import requests
 import json
-import time
 import random
 
 soggetti = ['Max', 'Davide', 'Giorgio', 'Jacopo', 'Andrea', 'Gabry', 'Bianca', 'Francesco', 'Chiara', 'Seppia']
 
-verbi = ['va', 'caga', 'urina', 'gingilla', 'scopa', 'ravana', 'perlustra','rumina', 'fuma', 'utilizza', 'picchia', 'scoreggia', 'puntualizza', 'corteggia', 'saccheggia', 'stalkerizza', 'annusa' ]
+verbi = ['caga', 'urina', 'gingilla', 'scopa', 'ravana', 'perlustra','rumina', 'fuma', 'utilizza', 'picchia', 'scoreggia', 'puntualizza', 'corteggia', 'saccheggia', 'stalkerizza', 'annusa' ]
 
 predicato = ['di soppiatto', 'con le mani', 'lo stantuffo', 'sua sorella', 'la sorella di Davide', 'l\'unicorno di Bianca', 'il computer', 'il glutine', 'l\'omino delle macchinette', 'le chiappe di Maurizio Costanzo', 'il Piccolo Lucio', 'l\'ano di Gianni Morandi', 'il pappagallo', 'Luke Skywalker', 'con Chuck Norris', 'la tavoletta del cesso', 'il perizoma di Mara Maionchi', 'nella borraccia di Giorgio']
 
