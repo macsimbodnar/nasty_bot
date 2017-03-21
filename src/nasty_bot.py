@@ -4,10 +4,11 @@ import random
 
 soggetti = ['Max', 'Davide', 'Giorgio', 'Jacopo', 'Andrea', 'Gabry', 'Bianca', 'Francesco', 'Chiara', 'Seppia']
 
-verbi = ['caga', 'ama tantissumo urinare', 'gingilla', 'scopa', 'ama ravanare', 'perlustra','rumina', 'fuma', 'utilizza', 'si diverte a picchiare', 'scoreggia', 'continua a puntualizzare', 'corteggia', 'saccheggia', 'stalkerizza sempre', 'annusa solitamente', 'vomita sempre', 'ama sparare', 'suda abbondantemente', 'si diverte a bere']
+verbi = ['caga', 'ama tantissumo urinare', 'scopa', 'ama ravanare', 'perlustra','rumina', 'si diverte a fumare', 'utilizza', 'si diverte a picchiare', 'scoreggia', 'continua a puntualizzare', 'corteggia', 'saccheggia', 'stalkerizza', 'annusa solitamente', 'ama sparare', 'suda abbondantemente', 'si diverte a bere']
 
-predicato = ['di soppiatto', 'con le mani', 'lo stantuffo', 'sua sorella', 'la sorella di Davide', 'l\'unicorno di Bianca', 'sul computer', 'il glutine', 'l\'omino delle macchinette', 'le chiappe di Maurizio Costanzo', 'il Piccolo Lucio', 'l\'ano di Gianni Morandi', 'il pappagallo', 'Luke Skywalker', 'con Chuck Norris', 'la tavoletta del cesso', 'il perizoma di Mara Maionchi', 'nella borraccia di Giorgio', 'in mutande', 'senza calze', 'ogni volta che beve il tea delle 16.00', 'ogni volta che fa la mossa della piccionata', 'durante gli eventi di Spazio Petardo', 'ai concerti di Laura Pausini', 'una canzone neomelodica napoletana di Luca Sarracino', 'il pappagallo di Ada', 'mentre usa lo Studio di Pok', 'Padre Maronno', 'in preparazione della PolimiRun', 'le principesse della Disney', 'ascoltando pezzi di Gigi D Agostino', 'una lasagna/lavagna']
+predicato = ['di soppiatto', 'con le mani', 'lo stantuffo', 'sua sorella', 'la sorella di Davide', 'l\'unicorno di Bianca', 'sul computer', 'il glutine', 'l\'omino delle macchinette', 'le chiappe di Maurizio Costanzo', 'il Piccolo Lucio', 'l\'ano di Gianni Morandi', 'il pappagallo', 'con Chuck Norris', 'la tavoletta del cesso', 'il perizoma di Mara Maionchi', 'nella borraccia di Giorgio', 'in mutande', 'senza calze', 'ogni volta che beve il tea delle 16.00', 'ogni volta che fa la mossa della piccionata', 'durante gli eventi di Spazio Petardo', 'ai concerti di Laura Pausini', 'una canzone neomelodica napoletana di Luca Sarracino', 'il pappagallo di Ada', 'mentre usa lo Studio di Pok', 'Padre Maronno', 'ascoltando pezzi di Gigi D Agostino', 'una lasagna/lavagna']
 
+titolo =['Piovono Panini senza Glutine', 'Sudo rm -rf/', 'NastyBot conquista Metid', 'L\'orario di merda', 'Chuck Norris non vi ama', 'Il pappagallo senza gambe', 'Gli amici del piccolo lucio', 'Luca Sarracino fans club', 'le principesse della Disney', 'ascoltando pezzi di Gigi D Agostino', 'una Lasagna con la Lavagna']
 
 class NastyBot:
 	"""A Nasty class for Nasty class bot"""
@@ -20,16 +21,16 @@ class NastyBot:
 						cache_control = 'no-cache, no-store, must-revalidate',
 						client_info = 'os=Linux; osVer=U; proc=Linux x86_64; lcid=en-us; deviceType=1; country=IT; clientName=skype.com; clientVer=908/1.85.0.29//skype.com',
 						connection = 'keep-alive',
-						context_id = 'tcid=149003339670576180',
+						context_id = 'tcid=149009530369523223',
 						expires = '0',
 						host = 'client-s.gateway.messenger.live.com',
 						origin = 'https://web.skype.com',
 						pragma = 'no-cache',
 						referer = 'https://web.skype.com/it/',
-						registration_token = 'registrationToken=U2lnbmF0dXJlOjI6Mjg6QVFRQUFBQ2VjcGRrMDErTy9SckQzdjFSa1lPVDtWZXJzaW9uOjY6MToxO0lzc3VlVGltZTo0OjE5OjUyNDc5NDIzMTg4MzE5MTQxMzE7RXAuSWRUeXBlOjc6MToxO0VwLklkOjI6MjM6dGhlbWF6ZXJmYWtlckBnbWFpbC5jb207RXAuRXBpZDo1OjM2OjcwNWMzYWM4LTJiN2UtNDZhNC05YjQxLWIxYjc5Y2ZjYWU4YTtFcC5Mb2dpblRpbWU6NzoxOjA7RXAuQXV0aFRpbWU6NDoxOTo1MjQ3OTQyMzE4ODMwNTA3ODU4O0VwLkF1dGhUeXBlOjc6MjoxNTtFcC5FeHBUaW1lOjQ6MTk6NTI0Nzk0MzE3NjkxNzM4NzkwNDtVc3IuTmV0TWFzazoxMToxOjM7VXNyLlhmckNudDo2OjE6MDtVc3IuUmRyY3RGbGc6MjowOjtVc3IuRXhwSWQ6OToxOjA7VXNyLkV4cElkTGFzdExvZzo0OjE6MDtVc2VyLkF0aEN0eHQ6Mjo0MjA6Q2xOcmVYQmxWRzlyWlc0WGRHaGxiV0Y2WlhKbVlXdGxja0JuYldGcGJDNWpiMjBCQTFWcFl4UXhMekV2TURBd01TQXhNam93TURvd01DQkJUUXhPYjNSVGNHVmphV1pwWldTbDRVYzU5WGhCNFFBQUFBQUFBRUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFTYkdsMlpUcDBhR1Z0WVhwbGNtWmhhMlZ5QUFBQUFBQUFBQUFBQjA1dlUyTnZjbVVBQUFBQUJBQUFBQUFBQUFBQUFBQUFwZUZIT2ZWNFFlRUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRVNiR2wyWlRwMGFHVnRZWHBsY21aaGEyVnlBQUFBQUFBQUFBQUFDQUFBQUFOVmFXTUlTV1JsYm5ScGRIa09TV1JsYm5ScGRIbFZjR1JoZEdVSVEyOXVkR0ZqZEhNT1EyOXVkR0ZqZEhOVmNHUmhkR1VJUTI5dGJXVnlZMlVOUTI5dGJYVnVhV05oZEdsdmJoVkRiMjF0ZFc1cFkyRjBhVzl1VW1WaFpFOXViSGs9Ow==',
+						registration_token = 'registrationToken=U2lnbmF0dXJlOjI6Mjg6QVFRQUFBQytPQ0ozbkpObjk4eUp4TzdRV1hpaDtWZXJzaW9uOjY6MToxO0lzc3VlVGltZTo0OjE5OjUyNDc5NDI5Mjg0MDIwOTk0MDI7RXAuSWRUeXBlOjc6MToxO0VwLklkOjI6MjM6dGhlbWF6ZXJmYWtlckBnbWFpbC5jb207RXAuRXBpZDo1OjM2OmE4YjUzODRiLTc1YmUtNDlkNC1hMWM0LTZlYzI4NmVlYmQzOTtFcC5Mb2dpblRpbWU6NzoxOjA7RXAuQXV0aFRpbWU6NDoxOTo1MjQ3OTQyOTI4NDAwNTM2ODgzO0VwLkF1dGhUeXBlOjc6MjoxNTtFcC5FeHBUaW1lOjQ6MTk6NTI0Nzk0Mzc5MjM3NzM4NzkwNDtVc3IuTmV0TWFzazoxMToxOjM7VXNyLlhmckNudDo2OjE6MDtVc3IuUmRyY3RGbGc6MjowOjtVc3IuRXhwSWQ6OToxOjA7VXNyLkV4cElkTGFzdExvZzo0OjE6MDtVc2VyLkF0aEN0eHQ6Mjo0MjA6Q2xOcmVYQmxWRzlyWlc0WGRHaGxiV0Y2WlhKbVlXdGxja0JuYldGcGJDNWpiMjBCQTFWcFl4UXhMekV2TURBd01TQXhNam93TURvd01DQkJUUXhPYjNSVGNHVmphV1pwWldTbDRVYzU5WGhCNFFBQUFBQUFBRUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFTYkdsMlpUcDBhR1Z0WVhwbGNtWmhhMlZ5QUFBQUFBQUFBQUFBQjA1dlUyTnZjbVVBQUFBQUJBQUFBQUFBQUFBQUFBQUFwZUZIT2ZWNFFlRUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRVNiR2wyWlRwMGFHVnRZWHBsY21aaGEyVnlBQUFBQUFBQUFBQUFDQUFBQUFOVmFXTUlTV1JsYm5ScGRIa09TV1JsYm5ScGRIbFZjR1JoZEdVSVEyOXVkR0ZqZEhNT1EyOXVkR0ZqZEhOVmNHUmhkR1VJUTI5dGJXVnlZMlVOUTI5dGJYVnVhV05oZEdsdmJoVkRiMjF0ZFc1cFkyRjBhVzl1VW1WaFpFOXViSGs9Ow==',
 						user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
-						group = '19:688e93554a9f4374b088cc798e6647e8@thread.skype',
-						message_id = 1490033446921):
+						group = '19:a39038e324a342b89aa173e51f00eccf@thread.skype',
+						message_id = 1490106318744):
 
 		self.content_type = content_type
 		self.accept = accept
@@ -55,7 +56,7 @@ class NastyBot:
 
 
 
-	def change_title(self, topic='', group = ''):
+	def change_title(self, topic=random.choice(titolo), group = ''):
 
 		print('Lumus')
 		if group == '':
@@ -103,7 +104,7 @@ class NastyBot:
 
 		r = requests.post(url, data=payload, headers=headers)
 		
-		self.message_id = message_id + 1
+		self.message_id = message_id + 100
 		print("Fatto il misfatto")
 		print(r)
 		return r
